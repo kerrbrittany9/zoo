@@ -1,9 +1,28 @@
-Plan: this project will need three components: list animals, edit and add animals. create welcome page first. then refactor. 
-
 # Zoo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+## Description
+
+This is web app is faux zoo administration page. It allows users, i.e. zoo administrators, to view all animals at zoo with data points to include age to likes and dislikes. The user is able to edit the animals' caretaker count, name or age. They may also modify view by animal age, either mature or young animal. This is a practice in Angular without a database.
+
+```
+Installation
+
+Clone project from Github via https://github.com/kerrbrittany9/zoo
+
+In local console
+  * type 'cd desktop'
+  * type 'git clone https://github.com/kerrbrittany9/zoo'
+  * 'cd zoo'
+  * 'npm install'
+  * 'bower init'
+  * 'bower install'
+  * 'bower install bootstrap --save'
+  * 'ng serve'
+
+Open browser at localhost:4200
+```
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
