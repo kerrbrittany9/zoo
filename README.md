@@ -1,3 +1,5 @@
+Plan: this project will need three components: list animals, edit and add animals. create welcome page first. then refactor. 
+
 # Zoo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
