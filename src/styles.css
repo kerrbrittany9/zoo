@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+.container {
+  background-image: url("http://www.cruzine.com/wp-content/uploads/2011/08/003-daily-inspirations-230.jpg");
+  background-repeat: no-repeat;
+  color: green;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: white;
+  opacity: inherit;
+}

@@ -2,11 +2,10 @@
   <div class="jumbotron">
     <h1>Your City Zoo Admin</h1>
   </div>
-  <div class="well">
+
     <h2>Current Animals</h2>
     <app-animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></app-animal-list>
-    <hr>
-  </div>
+
     <app-edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></app-edit-animal>
     <app-new-animal (newAnimalSender)="addAnimal($event)"></app-new-animal>
 </div>
