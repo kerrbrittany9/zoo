@@ -3,8 +3,7 @@
   <option value="matureAnimals">Mature Animals</option>
   <option value="youngAnimals">Young Animals</option>
 </select>
-
-
+<hr width="50%">
 <ul>
-  <li *ngFor="let currentAnimal of childAnimalList | age:filterByAge">{{currentAnimal.name}} from the {{currentAnimal.species}} family is {{currentAnimal.age}} years old. Caretakers: {{currentAnimal.caretakers}}. Diet: {{currentAnimal.diet}}. Located in: {{currentAnimal.location}}. Sex: {{currentAnimal.sex}}. Likes: {{currentAnimal.likes}} and dislikes: {{currentAnimal.dislikes}} <button (click)='editButtonHasBeenClicked(currentAnimal)'>Edit</button> </li>
+  <li *ngFor="let currentAnimal of childAnimalList | age:filterByAge">{{currentAnimal.name}} from the {{currentAnimal.species}} family is {{currentAnimal.age}} years old. Caretakers: {{currentAnimal.caretakers}}. Diet: {{currentAnimal.diet}}. Located in: {{currentAnimal.location}}. Sex: {{currentAnimal.sex}}. Likes: {{currentAnimal.likes}} and dislikes: {{currentAnimal.dislikes}} <button (click)='editButtonHasBeenClicked(currentAnimal)'>Edit</button><br><br></li>
 </ul>
