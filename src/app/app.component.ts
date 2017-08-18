@@ -9,6 +9,7 @@ import { Animal } from './animal.model';
 export class AppComponent {
   title = 'Your City Zoo';
   selectedAnimal = null;
+  filterByAge: string = "allAnimals";
 
   masterAnimalList: Animal[] = [
     new Animal("Arctic Fox", "Moon", 2, "carnivore", "Northern Trail", 5, "female", "cool shade", "loud noises"),
@@ -23,7 +24,7 @@ export class AppComponent {
   finishedEditing(){
     this.selectedAnimal = null;
   }
-  
+
   addAnimal(newAnimalFromChild: Animal) {
     this.masterAnimalList.push(newAnimalFromChild);
   }

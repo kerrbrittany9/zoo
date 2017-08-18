@@ -8,11 +8,16 @@ import { Animal } from '../animal.model';
 })
 export class AnimalListComponent {
 
-@Input() childAnimalList: Animal[];
-@Output() clickSender = new EventEmitter();
+  @Input() childAnimalList: Animal[];
+  @Output() clickSender = new EventEmitter();
+  filterByAge: string = "allAnimals";
 
-editButtonHasBeenClicked(animalToEdit: Animal) {
+  editButtonHasBeenClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByAge = optionFromMenu;
   }
 
 }
