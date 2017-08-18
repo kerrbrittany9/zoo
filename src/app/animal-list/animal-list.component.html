@@ -5,5 +5,6 @@
 </select>
 <hr width="50%">
 <ul>
-  <li *ngFor="let currentAnimal of childAnimalList | age:filterByAge">{{currentAnimal.name}} from the {{currentAnimal.species}} family is {{currentAnimal.age}} years old. Caretakers: {{currentAnimal.caretakers}}. Diet: {{currentAnimal.diet}}. Located in: {{currentAnimal.location}}. Sex: {{currentAnimal.sex}}. Likes: {{currentAnimal.likes}} and dislikes: {{currentAnimal.dislikes}} <button (click)='editButtonHasBeenClicked(currentAnimal)'>Edit</button><br><br></li>
+  <li *ngFor="let currentAnimal of childAnimalList | age:filterByAge">
+    <h3 id="word">{{currentAnimal.name}}</h3><i>{{currentAnimal.name}} is from the {{currentAnimal.species}} family and is {{currentAnimal.age}} years old. Caretaker count: {{currentAnimal.caretakers}}. Diet: {{currentAnimal.diet}}. Zoo Location: {{currentAnimal.location}}. Sex: {{currentAnimal.sex}}. Likes: {{currentAnimal.likes}}. Dislikes: {{currentAnimal.dislikes}}</i> <button (click)='editButtonHasBeenClicked(currentAnimal)'>Edit</button><br><br></li>
 </ul>
