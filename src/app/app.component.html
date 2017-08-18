@@ -4,5 +4,8 @@
   </div>
   <div class="well">
     <h2>Current Animals</h2>
-    <app-animal-list [childAnimalList]="masterAnimalList"></app-animal-list>
+    <app-animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></app-animal-list>
+    <hr>
   </div>
+    <app-edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></app-edit-animal>
+</div>
