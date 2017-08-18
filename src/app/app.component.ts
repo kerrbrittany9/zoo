@@ -19,8 +19,12 @@ export class AppComponent {
   editAnimal(clickedAnimal){
     this.selectedAnimal = clickedAnimal;
   }
-  
+
   finishedEditing(){
     this.selectedAnimal = null;
+  }
+  
+  addAnimal(newAnimalFromChild: Animal) {
+    this.masterAnimalList.push(newAnimalFromChild);
   }
 }

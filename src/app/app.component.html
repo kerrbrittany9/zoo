@@ -8,4 +8,5 @@
     <hr>
   </div>
     <app-edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></app-edit-animal>
+    <app-new-animal (newAnimalSender)="addAnimal($event)"></app-new-animal>
 </div>
