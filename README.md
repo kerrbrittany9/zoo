@@ -17,7 +17,6 @@ In local console
   * 'cd zoo'
   * 'npm install'
   * 'bower init'
-  * 'bower install'
   * 'bower install bootstrap --save'
   * 'ng serve'
 
